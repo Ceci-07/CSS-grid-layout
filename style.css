@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  --claro:#DAD9D8;
+  --medioc: #B9B8B6;
+  --gris: #898681;
+  --gris-claro: #58534E;
+  --topo: #282623;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    height: 100vh;
+    background-image: url('/asset/sofa-dos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-1{
+    background: var(--claro);
+    grid-column: 5/7;
+    grid-row: 2/3;
+    border:1px solid #58534E;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.76);
+}
+.item-2{
+    background: var(--medioc);
+    grid-column: 5/7;
+    grid-row: 4/5;
+    border:1px solid #58534E;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.76);  
+}
+.item-3{
+    background: var(--gris);
+    grid-column:5/7 ;
+    grid-row:6/7;  
+    border:1px solid #58534E;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.76); 
+}
+.item-4{
+    background: var(--gris-claro);
+    grid-column:5/7 ;
+    grid-row:8/9;
+    border:1px solid #58534E;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.76);
+}
+.item-5{
+    background: var(--topo);
+    grid-column:5/7 ;
+    grid-row:10/11;
+    border:1px solid #58534E;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.76);
+}
+
+@media (max-width:360px){
+    .container{
+        width: 100%;
+    }
+}
+
